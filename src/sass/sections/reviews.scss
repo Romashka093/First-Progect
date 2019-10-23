@@ -1,0 +1,119 @@
+.reviews {
+    padding: 25px 0 58px 0;
+}
+
+.wrapper-reviews {
+    margin: auto;
+    margin-bottom: 26px;
+}
+
+.reviews__customer-photo {
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(196, 199, 199);
+}
+
+.reviews__customer-name {
+    font-size: 18px;
+    font-family: "OpenSansSB";
+    color: rgb(6, 32, 51);
+    line-height: 24px;
+    text-align: center;
+}
+
+.reviews__customer-company{
+    font-size: 13px;
+    font-family: "OpenSansR";
+    color: rgb(100, 100, 100);
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.reviews__review {
+    width: 236px;
+    margin: auto;
+    font-size: 16px;
+    font-family: "OpenSansR";
+    color: rgb(40, 37, 40);
+    line-height: 26px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 22px;
+}
+
+.reviews__review::before {
+    content: open-quote;
+    display: block;
+    font-size: 150px;
+    font-family: "Georgia";
+    color: rgb(239, 239, 239);
+    line-height: 34px;
+    text-align: left;
+    position: absolute;
+    top: 24px;
+    left: -34px;
+    z-index: -1;
+}
+
+.reviews__slider-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.revies__dots-item:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.reviews__dots-item-btn {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    border-color: rgb(40, 37, 40);
+    background-color: rgb(40, 37, 40);
+    outline: none;
+    opacity: 0.2;
+    width: 10px;
+    height: 10px;
+}
+
+.reviews__dots-item-btn:focus {
+    border-color: rgb(26, 183, 152);
+    background-color: rgb(26, 183, 152);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px; ///!!!!!!!!!!!!!!!!!!!
+    }
+
+    .reviews {
+        padding: 50px 0 108px 0;
+    }
+    
+    .reviews__customer-company{
+
+        margin-bottom: 24px;
+    }
+    
+    .reviews__review {
+        width: 80%;
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 60px;
+    }
+    
+      //!!!!!!!
+
+    .reviews__review::before {
+        top: 30px;
+        left: -24px;
+    }
+
+}
+  
+  
+  
+  

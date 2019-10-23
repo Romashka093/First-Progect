@@ -1,54 +1,54 @@
-/* open-sans-regular - latin */
+
 @font-face {
   font-family: 'OpenSansR';
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-    url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-regular.woff') format('woff');
+    url('../../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../../fonts/OpenSans-Regular.woff') format('woff');
 }
-/* open-sans-600 - latin */
+
 @font-face {
   font-family: 'OpenSansSB';
   font-style: normal;
   font-weight: 600;
   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-    url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-600.woff') format('woff');
+    url('../../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    url('../../fonts/OpenSans-SemiBold.woff') format('woff');
 }
-/* open-sans-700 - latin */
+
 @font-face {
   font-family: 'OpenSansB';
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'),
-    url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-700.woff') format('woff');
+    url('../../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../../fonts/OpenSans-Bold.woff') format('woff');
 }
-/* raleway-regular - latin */
+
 @font-face {
   font-family: 'RalewayR';
   font-style: normal;
   font-weight: 400;
   src: local('Raleway'), local('Raleway-Regular'),
-    url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'),
-    url('../fonts/raleway-v14-latin-regular.woff') format('woff');
+    url('../../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('../../fonts/Raleway-Regular.woff') format('woff');
 }
-/* raleway-600 - latin */
+
 @font-face {
   font-family: 'RalewaySB';
   font-style: normal;
   font-weight: 600;
   src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
-    url('../fonts/raleway-v14-latin-600.woff2') format('woff2'),
-    url('../fonts/raleway-v14-latin-600.woff') format('woff');
+    url('../../fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('../../fonts/Raleway-SemiBold.woff') format('woff');
 }
-/* raleway-700 - latin */
+
 @font-face {
   font-family: 'RalewayB';
   font-style: normal;
   font-weight: 700;
   src: local('Raleway Bold'), local('Raleway-Bold'),
-    url('../fonts/raleway-v14-latin-700.woff2') format('woff2'),
-    url('../fonts/raleway-v14-latin-700.woff') format('woff');
+    url('../../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../../fonts/Raleway-Bold.woff') format('woff');
 }

@@ -1,0 +1,205 @@
+.team {
+    padding: 58px 0 25px 0;
+}
+
+.team__description {
+    display: block;
+    width: 260px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'OpenSansB';
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(6, 32, 51, 0.8);
+    margin-bottom: 50px;
+}
+
+.wrapper-team {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 180, 147, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay__title {
+    font-family: "OpenSansB";
+    margin-bottom: 10px;
+}
+
+.overlay__content {
+   font-family: "OpenSansR";
+   margin-bottom: 64px;
+}
+  
+.overlay__list {
+    display: flex;
+    justify-content: center;
+}
+
+.team__list-item {
+    width: 270px;
+    margin: auto;
+}
+
+.team__list-item:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+
+.team__list-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.overlay__list-item:not(:last-of-type) {
+    margin-right: 4px;
+}
+
+.overlay__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.2s linear;
+}
+
+.overlay:hover .overlay__svg {
+    fill: rgb(255, 255, 255);
+}
+
+.overlay__svg {
+    width: 26px;
+    height: 26px;
+    transition: fill 0.2s linear;
+}
+
+/*.twitter {
+    width: 22px;
+    height: 18px;
+
+}
+
+.facebook {
+    width: 11px;
+    height: 22px;
+}
+
+.linkedin {
+    width: 22px;
+    height: 22px;
+}*/
+
+.team__list-item-name {
+    font-size: 18px;
+    font-family: "OpenSansSB";
+    color: rgb(6, 32, 51);
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+
+} 
+
+.team__list-item:hover .team__list-item-name {
+    color: rgb(14, 180, 147)
+}
+  
+.team__list-item-position {
+    font-size: 13px;
+    font-family: "OpenSansR";
+    color: rgba(6, 32, 51, 0.561);
+    line-height: 24px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .team {
+        padding: 106px 0 50px 0;
+    }
+    
+    .team__description {
+        width: 80%;
+        line-height: 24px;
+        margin-bottom: 68px;
+    }
+
+    .team__list-item {
+        margin: 0;
+    }
+
+    .team__list-item:not(:last-of-type) {
+        margin-bottom: 0px;
+    }
+
+    .team__list-item:nth-of-type(-n+2) {
+        margin-bottom: 58px;
+    }
+
+    .team__list-item:nth-of-type(odd) {
+        margin-right: 32px;
+    }
+    
+    .team__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+      width: 1145px;
+    }
+/////!!!!!
+    .team {
+        padding: 90px 0 70px 0;
+    }
+    
+    .team__description {
+        width: 80%;
+        margin-bottom: 102px;
+    }
+
+    .team__list-item {
+        margin: 0;
+    }
+
+    .team__list-item:not(:last-of-type) {
+        margin-bottom: 0px;
+    }
+
+    .team__list-item:nth-of-type(-n+2) {
+        margin-bottom: 58px;
+    }
+
+    .team__list-item:nth-of-type(odd) {
+        margin-right: 32px;
+    }
+    
+    .team__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+}
+
