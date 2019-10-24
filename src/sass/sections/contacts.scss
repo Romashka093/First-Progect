@@ -1,0 +1,348 @@
+.contacts {
+  background-image: url(../images/bg_contacts_mobile.png);
+  background-color: #181818;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+@media (device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .contacts {
+    background-image: url(../images/bg_contacts_mobile@2x.png);
+  }
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'RalewayB';
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.333;
+  margin-bottom: 40px;
+
+  &::before {
+    display: block;
+    position: relative;
+    content: '';
+    height: 1px;
+    width: 60px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  &-after::after {
+    display: block;
+    position: relative;
+    content: '';
+    height: 1px;
+    width: 60px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+}
+
+.form-wrap {
+  padding: 0 15px;
+}
+
+.contacts__feedback {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: 'OpenSansR';
+}
+
+.contacts__feedback-user {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: inherit;
+}
+
+.contacts__feedback-user-data {
+  padding-bottom: 25px;
+}
+
+.contacts__feedback-user-data-input {
+  height: 44px;
+  width: 270px;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 3px;
+}
+
+.contacts__feedback-message {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 45px;
+  margin: 0 auto;
+}
+
+.message_text {
+  height: 174px;
+  width: 270px;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 3px;
+}
+
+.contacts__feedback-button {
+  text-align: center;
+}
+
+.contacts__feedback-button {
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.submit {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.091;
+  border: none;
+  border-radius: 3px;
+  background-color: #31d4e7;
+  padding: 13px 45px;
+  cursor: pointer;
+}
+
+.contacts__feedback-user-data-input:invalid,
+.message_text:invalid {
+  outline-color: #1ab798;
+}
+
+.contacts__feedback-user-data-input:valid,
+.message_text:valid {
+  outline-color: #ffffff;
+}
+
+.contacts-wrapper {
+  padding: 0 15px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.contacts_description {
+  font-size: 24px;
+  font-family: 'RalewayR';
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.contacts_description-text {
+  font-size: 14px;
+  font-family: 'OpenSansR';
+  color: #ffffff80;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contacts_social {
+  display: flex;
+  height: auto;
+  width: 156px;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contacts_social-icons {
+  position: relative;
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
+}
+
+.contacts_social-icons::before {
+  position: absolute;
+  content: '';
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+
+.facebook::before {
+  background-color: #3b5997;
+  background-image: url(../images/icon-facebook.svg);
+}
+
+.twitter::before {
+  background-color: #3ec2f3;
+  background-image: url(../images/icon-twitter.svg);
+}
+
+.linkedin::before {
+  background-color: #007ab9;
+  background-image: url(../images/icon-linkedin.svg);
+}
+
+.contacts__contacts {
+  text-align: center;
+  font-family: 'OpenSansB';
+  font-size: 14px;
+  color: #bface2;
+  line-height: 1.714;
+  margin-bottom: 48px;
+}
+
+.footer {
+  border-top: 1px solid #ffffff80;
+  margin: 0 auto;
+  padding: 42px 22px;
+}
+
+.footer__rights {
+  font-size: 14px;
+  font-family: 'OpenSansR';
+  color: #ffffff80;
+  line-height: 1.5;
+  text-align: left;
+  max-width: 320px;
+}
+
+.footer__rights-link {
+  color: #ffffff80;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 720px;
+  }
+
+  .contacts {
+    background-image: url(../images/bg_contacts_tablet.png);
+    padding-top: 60px;
+  }
+
+  @media (device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .contacts {
+      background-image: url(../images/bg_contacts_tablet@2x.png);
+    }
+  }
+
+  .section_title {
+    font-size: 28px;
+    line-height: 0.857;
+    width: 325px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .contacts__feedback {
+    width: 570px;
+    margin: 0 auto;
+  }
+
+  .contacts__feedback-user {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts__feedback-user-data {
+    padding-bottom: 30px;
+  }
+
+  .contacts__feedback-message {
+    padding-bottom: 30px;
+  }
+
+  .message_text {
+    height: 179px;
+    width: 570px;
+  }
+
+  .contacts-wrapper {
+    min-width: 420px;
+  }
+
+  .contacts__contacts {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    padding: 20px 20px;
+  }
+
+  .footer__rights {
+    font-size: 14px;
+    font-family: 'OpenSansR';
+    color: #ffffff80;
+    line-height: 1.5;
+    text-align: left;
+    min-width: 720px;
+  }
+
+  .footer__rights-link {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 1145px;
+  }
+
+  .contacts {
+    background-image: url(../images/bg_contacts_desktop.png);
+    padding-top: 60px;
+  }
+
+  @media (device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .contacts {
+      background-image: url(../images/bg_contacts_desktop@2x.png);
+    }
+  }
+
+  .wrap_desctop {
+    margin: 0 auto;
+    min-width: 1145px;
+  }
+
+  .form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .contacts__feedback-button {
+    margin-right: 0;
+  }
+
+  .contacts__feedback {
+    margin: 0;
+  }
+
+  .contacts_social {
+    margin: 0;
+  }
+
+  .contacts-wrapper {
+    margin: 0;
+  }
+
+  .contacts__contacts,
+  .contacts_description,
+  .contacts_description-text {
+    text-align: left;
+  }
+
+  .footer__rights {
+    min-width: 1145px;
+    margin: 0 auto;
+  }
+}

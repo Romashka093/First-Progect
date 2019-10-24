@@ -63,16 +63,16 @@ function sprite() {
 }
 
 function images() {
-  return src(['src/images/**/*.{png,jpg,jpeg,svg}', '!src/images/icons/**/*'])
-    .pipe(
-      imagemin([
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 3 }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-        }),
-      ]),
-    )
+  return src(['src/images/**/*.{png,jpg,jpeg,svg,mp4}', '!src/images/icons/**/*'])
+    // .pipe(
+    //   imagemin([
+    //     imagemin.jpegtran({ progressive: true }),
+    //     imagemin.optipng({ optimizationLevel: 3 }),
+    //     imagemin.svgo({
+    //       plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+    //     }),
+    //   ]),
+    // )
     .pipe(dest('build/images'));
 }
 
