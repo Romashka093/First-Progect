@@ -34,12 +34,12 @@ ol {
 
 @media (min-width: 768px) {
   .container {  
-    width: 720px;///!!!!!!!!!!!
+    min-width: 720px;
   }
 }
   
 @media (min-width: 1200px) {
     .container {
-      max-width: 1145px;
+      min-width: 1145px;
     }
   }
