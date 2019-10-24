@@ -16,6 +16,12 @@
   align-items: center;
   justify-content: center;
 }
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 %flex-between {
   display: flex;
   justify-content: space-between;

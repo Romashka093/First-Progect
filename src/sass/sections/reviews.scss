@@ -1,0 +1,177 @@
+.reviews {
+    padding: 25px 0 58px 0;
+
+    &__customer-photo {
+        margin: auto;
+        border-radius: 50%;
+        border: 2px solid $border-color;
+    }
+
+    &__customer-name {
+        font-size: 18px;
+        font-family: $main-title-font;
+        color: rgb(6, 32, 51);
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__customer-company{
+        font-size: 13px;
+        font-family: $text-font;
+        color: $tertiary-color;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__review {
+        width: 236px;
+        margin: auto;
+        font-size: 16px;
+        font-family: $text-font;
+        color: $text-title-color;
+        line-height: 26px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 22px;
+
+        &::before {
+            content: open-quote;
+            display: block;
+            font-size: 150px;
+            font-family: "Georgia";
+            color: $secondary-elements-color;
+            line-height: 34px;
+            text-align: left;
+            position: absolute;
+            top: 24px;
+            left: -34px;
+            z-index: -1;
+        }
+    }
+    
+    &__dots {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+
+            &-btn {
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 50%;
+                border-color: $text-title-color;
+                background-color: $text-title-color;
+                outline: none;
+                opacity: 0.2;
+                width: 10px;
+                height: 10px;
+
+                &:focus {
+                    border-color: $main-color;
+                    background-color: $main-color;
+                    opacity: 1;
+                }
+            } 
+        }
+    }
+}
+
+.reviwes__dots-item:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.section-title--reviews {
+    width: 158px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: -50px;
+        top: 15px;
+        margin: 0;
+    }
+
+    &::after {
+        position: absolute;
+        right: -50px;
+        top: 15px;
+        margin: 0;
+    }
+
+}
+
+.wrapper-reviews {
+    margin: auto;
+    margin-bottom: 26px;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        min-width: 720px;
+    }
+
+    .reviews {
+        padding: 50px 0 108px 0;
+
+        &__customer-company{
+            margin-bottom: 60px;
+        }
+
+        &__review {
+            width: 80%;
+            font-size: 18px;
+            line-height: 36px;
+            margin-bottom: 58px;
+
+            &::before {
+                top: 30px;
+                left: -24px;
+            }
+        }
+        
+    }
+
+    .section-title--reviews {
+        width: 410px;
+        font-size: 28px;
+        line-height: 36px;
+
+        &::before {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -80px;
+        }
+
+        &::after {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -80px;
+        }
+    }   
+}
+
+@media (min-width: 1200px) {
+    .container {
+      min-width: 1145px;
+    }
+
+    .reviews {
+        padding: 70px 0 124px 0;
+
+        &__customer-company{
+            margin-bottom: 104px;
+        }
+
+        &__review {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+  
+  
+  
