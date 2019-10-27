@@ -5,36 +5,31 @@
 }
 
 .video {
-  background-color: #31d4e7;
+  background-color: $background-video-color;
   text-align: center;
   padding: 60px 0;
 
   &__title {
     font-size: 18px;
     line-height: 1;
-    color: #222222;
+    color: $text-title-video;
     text-transform: uppercase;
-    font-family: 'RalewayB';
-    font-style: normal;
-    font-weight: 700;
+    font-family: $title-font;
     margin-bottom: 24px;
   }
 
   &__description {
     font-size: 16px;
     line-height: 1.625;
-    color: #ffffff;
-    font-family: 'OpenSansR';
-    font-style: normal;
-    font-weight: 400;
+    color: $main-text-color;
+    font-family: $text-font;
     margin-bottom: 24px;
   }
 
   &__app {
-    display: flex;
+    @extend %flex-between;
     height: auto;
     width: 152px;
-    justify-content: space-between;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 40px;
@@ -50,7 +45,7 @@
         content: '';
         height: 69px;
         width: 69px;
-        background-color: #0098cd;
+        background-color: $icon-video-color;
         border-radius: 50%;
         background-position: center;
         background-repeat: no-repeat;
@@ -94,8 +89,11 @@
 }
 
 @media (min-width: 1200px) {
-  .container {
-    min-width: 1145px;
+  .video {
+    .container {
+      display: inherit;
+      min-width: 1145px;
+    }
   }
 
   .video {
@@ -108,10 +106,14 @@
     }
   }
 
+  .video__description {
+    max-width: 85%;
+  }
+
   .wrap {
-    min-width: 55%;
     margin: 0;
     text-align: left;
     padding-top: 30px;
+    min-width: 644px;
   }
 }
