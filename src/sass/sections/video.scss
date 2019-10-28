@@ -1,0 +1,137 @@
+.wrap {
+  padding: 0 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.video {
+  background-color: $background-video-color;
+  text-align: center;
+  padding: 60px 0;
+
+  &__title {
+    font-size: 18px;
+    line-height: 1;
+    color: $text-title-video;
+    text-transform: uppercase;
+    font-family: $title-font;
+    margin-bottom: 24px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.625;
+    color: $main-text-color;
+    font-family: $text-font;
+    margin-bottom: 24px;
+  }
+
+  &__app {
+    @extend %flex-between;
+    height: auto;
+    width: 152px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+
+    &-link {
+      position: relative;
+      height: 69px;
+      width: 69px;
+
+      &:hover, &:focus {
+        &::before {
+          background-color: $overlay-color;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 69px;
+        width: 69px;
+        background-color: $icon-video-color;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// .video__app-icon:hover {
+//   background-color: khaki;
+// }
+
+.apple::before {
+  background-image: url(../images/icon-apple.svg);
+}
+
+.android::before {
+  background-image: url(../images/icon-android.svg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 720px;
+  }
+
+  .video {
+    padding: 100px 0;
+
+    &__title {
+      font-size: 28px;
+      line-height: 0.643;
+    }
+
+    &__description {
+      width: 540px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    &__img {
+      width: 500px;
+      height: 310px;
+    }
+  }
+
+  .wrap {
+    padding: 0;
+    min-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    .container {
+      display: inherit;
+      min-width: 1145px;
+    }
+  }
+
+  .video {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px;
+
+    &__description {
+      max-width: 85%;
+      margin: 0 0 24px;
+    }
+
+    &__app {
+      margin: 0;
+    }
+  }
+
+  .wrap {
+    margin: 0;
+    text-align: left;
+    padding-top: 30px;
+    min-width: 644px;
+  }
+}

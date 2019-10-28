@@ -1,0 +1,19 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+
+// HELPERS
+@import './helpers/fonts.scss';
+@import './helpers/base.scss';
+@import './helpers/placeholder.scss';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+
+// SECTIONS
+@import './sections/header.scss';
+@import './sections/features.scss';
+@import './sections/video.scss';
+@import './sections/team.scss';
+@import './sections/reviews.scss';
+@import './sections/contacts.scss';
