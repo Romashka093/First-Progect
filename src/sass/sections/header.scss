@@ -103,6 +103,12 @@
   height: 48px;
   border-radius: 5px;
   margin-left: 22px;
+  cursor: pointer;
+
+  &:focus, &:hover {
+    background-color: $background-video-color;
+    transition: all 0.2s linear;
+  }
 
   &::before {
     @extend %pseudo;
@@ -137,10 +143,11 @@
   .list_link {
     color: $title-text-color;
     text-transform: uppercase;
-  }
+    transition: all 0.2s linear;
 
-  .list_link:hover {
-    color: $text-color;
+    &:hover, &:focus{
+      color: $text-color;
+    }
   }
 
   .header-container {
@@ -199,6 +206,12 @@
     }
   }
 
+  .section-header {
+    .container {
+      position: relative;
+    }
+  }
+
   .header__title {
     line-height: 0.857;
   }
@@ -212,7 +225,7 @@
   }
 
   .title-img {
-    right: 90px;
-    top: 110px;
+    right: 24px;
+    top: -60px;
   }
 }

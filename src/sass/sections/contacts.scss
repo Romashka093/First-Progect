@@ -99,6 +99,17 @@
   background-color: $background-video-color;
   padding: 13px 45px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+    transition: all 0.2s linear;
+  }
+}
+
+.contacts__feedback-user-data-input::placeholder,
+.message_text::placeholder {
+  color: #c1c1c1;
 }
 
 .contacts__feedback-user-data-input:invalid,
@@ -112,8 +123,7 @@
 }
 
 .contacts-wrapper {
-  padding: 0 15px;
-  max-width: 320px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 
@@ -142,18 +152,26 @@
   padding: 40px 0;
 
   &-icons {
-    height: 42px;
-    width: 42px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    @extend %flex-center;
-    align-items: center;
-
-    &-link {
+    &-svg {
       width: 20px;
       height: 20px;
+    }
+
+    &-link {
+      height: 42px;
+      width: 42px;
+      cursor: pointer;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      @extend %flex-center;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        background-color: $tel-email-contacts-color;
+        transition: all 0.2s linear;
+      }
     }
   }
 }
@@ -182,7 +200,7 @@
 .footer {
   border-top: 1px solid $footer-text-color;
   margin: 0 auto;
-  padding: 42px 22px;
+  padding: 20px 22px;
 
   &__rights {
     font-size: 14px;
@@ -194,7 +212,7 @@
 
     &-link {
       color: $footer-text-color;
-    }    
+    }
   }
 }
 
@@ -246,7 +264,7 @@
   }
 
   .contacts-wrapper {
-    min-width: 420px;
+    width: 420px;
   }
 
   .contacts__contacts {
@@ -313,6 +331,7 @@
 
   .contacts-wrapper {
     margin: 0;
+    width: 450px;
   }
 
   .contacts__contacts,

@@ -23,7 +23,7 @@
       color: $titel-name-color;
       line-height: 24px;
       text-align: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     &-position {
@@ -115,6 +115,11 @@
     margin-bottom: 64px;
   }
 
+  &__svg {
+    width: 20px;
+    height: 20px;
+  }
+
   &__list {
     @extend %flex-center;
 
@@ -128,12 +133,13 @@
       &:not(:last-of-type) {
         margin-right: 4px;
       }
-    }
-  }
 
-  &__svg {
-    width: 20px;
-    height: 20px;
+      &:hover {
+        background-color: $bg-section-title-color;
+      }
+    }
+
+
   }
 }
 
