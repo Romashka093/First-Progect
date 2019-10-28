@@ -9,7 +9,7 @@
 }
 
 .header-container {
-  background-image: url(../../images/img1.png);
+  background-image: url(../images/img1.png);
   @extend %bg-image;
   border-top: 1px solid transparent;
 }
@@ -35,7 +35,7 @@
 }
 
 .header__btn {
-  background-image: url(../../images/burger.png);
+  background-image: url(../images/burger.png);
   @extend %bg-image;
   width: 30px;
   height: 20px;
@@ -81,7 +81,7 @@
       @extend %pseudo;
       width: 7px;
       height: 12px;
-      background-image: url(../../images/arrow1.png);
+      background-image: url(../images/arrow1.png);
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -151,7 +151,7 @@
   }
 
   .header-container {
-    background-image: url(../../images/img2.jpg);
+    background-image: url(../images/img2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -60,27 +60,27 @@
   }
 
   &:nth-child(1)::before {
-    content: url(../../images/board.png);
+    content: url(../images/board.png);
   }
 
   &:nth-child(2)::before {
-    content: url(../../images/device.png);
+    content: url(../images/device.png);
   }
 
   &:nth-child(3)::before {
-    content: url(../../images/thumbup.png);
+    content: url(../images/thumbup.png);
   }
 
   &:nth-child(4)::before {
-    content: url(../../images/star.png);
+    content: url(../images/star.png);
   }
 
   &:nth-child(5)::before {
-    content: url(../../images/notification.png);
+    content: url(../images/notification.png);
   }
 
   &:nth-child(6)::before {
-    content: url(../../images/share.png);
+    content: url(../images/share.png);
   }
 }
 
@@ -169,7 +169,7 @@
     transform: translate(-50%, -50%);
     width: 418px;
     height: 726px;
-    background-image: url('../../images/screen.png');
+    background-image: url('../images/screen.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
