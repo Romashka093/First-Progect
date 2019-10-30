@@ -465,7 +465,7 @@ input[type='radio'].visually-hidden {
 }
 
 .container {
-  width: 320px;
+  width: 290px;
   margin: 0 auto;
 }
 
@@ -654,6 +654,8 @@ input[type='radio'].visually-hidden {
   height: 1px;
   margin-bottom: 8px;
   margin-right: 10px;
+  -webkit-animation: left 1s linear;
+  animation: left 1s linear;
 }
 
 .section-title::after {
@@ -664,6 +666,56 @@ input[type='radio'].visually-hidden {
   height: 1px;
   margin-bottom: 8px;
   margin-left: 10px;
+  -webkit-animation: right 1s linear;
+  animation: right 1s linear;
+}
+
+@-webkit-keyframes left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .features__title__description {
@@ -683,7 +735,7 @@ input[type='radio'].visually-hidden {
 .features-list__item {
   position: relative;
   margin-bottom: 38px;
-  margin-left: 60px;
+  margin-left: 45px;
   width: 210px;
 }
 
@@ -766,7 +818,7 @@ input[type='radio'].visually-hidden {
   width: 152px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .video__app-link {
@@ -1058,6 +1110,8 @@ input[type='radio'].visually-hidden {
   width: 60px;
   background-color: #ffffff;
   text-align: center;
+  -webkit-animation: left 1s linear;
+  animation: left 1s linear;
 }
 
 .section_title-after::after {
@@ -1066,6 +1120,8 @@ input[type='radio'].visually-hidden {
   width: 60px;
   background-color: #ffffff;
   text-align: center;
+  -webkit-animation: right 1s linear;
+  animation: right 1s linear;
 }
 
 .form-wrap {
@@ -1095,14 +1151,14 @@ input[type='radio'].visually-hidden {
 }
 
 .contacts__feedback-message {
-  padding-bottom: 45px;
   margin: 0 auto;
+  margin-bottom: 45px;
 }
 
 .contacts__feedback-button {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .message_text {
@@ -1111,6 +1167,7 @@ input[type='radio'].visually-hidden {
   padding: 16px 22px;
   border: none;
   border-radius: 3px;
+  resize: none;
 }
 
 .submit {
@@ -1231,10 +1288,23 @@ input[type='radio'].visually-hidden {
 .contacts__contacts {
   text-align: center;
   font-family: "OpenSansB";
-  font-size: 14px;
   color: #bface2;
+  font-size: 14px;
   line-height: 1.714;
   margin-bottom: 48px;
+  text-decoration: none;
+}
+
+.contacts__contacts-tel,
+.contacts__contacts-email {
+  color: #bface2;
+}
+
+.contacts__contacts-tel:hover,
+.contacts__contacts-tel:focus,
+.contacts__contacts-email:hover,
+.contacts__contacts-email:focus {
+  color: #31d4e7;
 }
 
 .footer {
@@ -1375,6 +1445,7 @@ input[type='radio'].visually-hidden {
   .features-list__item {
     width: 246px;
     margin-bottom: 90px;
+    margin-left: 30px;
   }
 
   .container {
@@ -1626,12 +1697,13 @@ input[type='radio'].visually-hidden {
   }
 
   .features-list__item:nth-of-type(2n + 1) {
-    margin-right: 480px;
+    margin-right: 540px;
   }
 
   .features-list__item {
     width: 248px;
     margin-bottom: 104px;
+    margin-left: 25px;
   }
 
   .features-list {
